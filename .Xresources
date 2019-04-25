@@ -1,0 +1,12 @@
+URxvt.font:		xft:Dejavu Sans Mono:size=10
+URxvt.internalBorder:	30
+URxvt.scrollBar:	false
+
+Rxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.C-BackSpace:	\033[1;5D\033[3;5~
+URxvt.keysym.C-Up:		\033[1;5A
+URxvt.keysym.C-Down:		\033[1;5B
+URxvt.keysym.C-Right:		\033[1;5C
+URxvt.keysym.C-Left:		\033[1;5D
+
