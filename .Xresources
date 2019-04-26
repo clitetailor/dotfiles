@@ -1,3 +1,5 @@
+#include ".Xresources.d/palenight"
+
 URxvt.font:		xft:Dejavu Sans Mono:size=10
 URxvt.internalBorder:	30
 URxvt.scrollBar:	false
