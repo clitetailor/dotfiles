@@ -20,13 +20,13 @@ super + s
 
 # print screen
 ctrl + Print
-	maim -s -f jpg | xclip -selection clipboard -t image/jpg
+	maim -s | xclip -selection clipboard -t image/png
 
 super + Print
-	maim -f jpg "~/Pictures/maim_$(date +%Y_%M_%d)_$(date +%S%N | cut -b1-3).jpg"
+	maim -f jpg ~/Pictures/maim_$(date +%Y_%M_%d)_$(date +%S%N | cut -b1-3).jpg
 
 alt + Print
-	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/jpeg
+	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 
 # make sxhkd reload its configuration files:
 super + Escape

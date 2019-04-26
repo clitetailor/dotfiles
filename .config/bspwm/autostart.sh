@@ -3,3 +3,4 @@ nitrogen --restore &
 light-locker &
 lxsession &
 dunst &
+yabar &
