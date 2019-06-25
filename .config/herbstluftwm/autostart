@@ -53,7 +53,7 @@ hc keybind XF86AudioMute           spawn pactl set-sink-mute   0 toggle
 
 # default applications
 hc keybind $Mod-F2      spawn google-chrome-stable
-hc keybind $Mod-d       spawn dmenu_rur
+hc keybind $Mod-d       spawn dmenu_run
 hc keybind $Mod-Return  spawn urxvt
 
 # basic movement
