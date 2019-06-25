@@ -51,10 +51,7 @@ function parse_git_dirty() {
 	fi
 }
 
-alias ls='ls --color=auto'
+alias  ls='ls --color=auto'
 export PS1="user \e[35m\u\e[39m dir \e[34m\W\e[39m \`parse_git_branch\`\n "
 
-export XDG_CONFIG_HOME="$HOME/.config"
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+alias  hc="herbstclient"

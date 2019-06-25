@@ -1,173 +1,184 @@
-adapta-gtk-theme 3.95.0.11-1
-alsa-utils 1.1.8-1
-arandr 0.1.10-3
-autoconf 2.69-5
-automake 1.16.1-1
-bash 5.0.003-1
-binutils 2.32-1
-bison 3.3.2-1
-bspwm 0.9.7-1
-bzip2 1.0.6-8
-coreutils 8.31-1
-cryptsetup 2.1.0-1
-device-mapper 2.02.184-4
-dhcpcd 7.0.8-1
-dialog 1:1.3_20190211-1
-diffutils 3.7-1
-dmenu 4.9-1
-dunst 1.4.0-1
-e2fsprogs 1.45.0-1
-fakeroot 1.23-1
-feh 3.1.3-1
-file 5.36-1
-file-roller 3.32.1-1
-filesystem 2018.12-2
-findutils 4.6.0-4
-flex 2.6.4-2
-font-manager 0.7.5-2
-gawk 4.2.1-2
-gcc 8.3.0-1
-gcc-libs 8.3.0-1
-gdb 8.2.1-3
-gettext 0.19.8.1-3
-git 2.21.0-1
-glibc 2.29-1
-google-chrome 74.0.3729.108-1
-gotop-bin 3.0.0-2
-grep 3.3-1
-grub 2:2.02-8
-gvfs 1.40.1-2
-gzip 1.10-1
-htop 2.2.0-2
-ibus 1.5.20-2
-ibus-unikey 0.6.1-5
-inetutils 1.9.4-7
-iproute2 5.0.0-1
-iputils 20180629.f6aac8d-4
-jfsutils 1.1.15-6
-less 530-1
-licenses 20181104-1
-light-locker 1.8.0-2
-lightdm 1:1.28.0-3
-lightdm-mini-greeter 0.3.4-1
-lightdm-settings 1.2.5-1
-lightdm-slick-greeter 1.2.4-2
-linux 5.0.9.arch1-1
-linux-firmware 20190313.efd2c1c-1
-logrotate 3.15.0-1
-lvm2 2.02.184-4
-lxappearance-gtk3 0.6.3-2
-lxrandr-gtk3 0.3.2-1
-lxsession-gtk3 1:0.5.4-1
-m4 1.4.18-2
-maim 5.5.2-4
-make 4.2.1-3
-man-db 2.8.5-2
-man-pages 5.00-1
-mdadm 4.1-1
-nano 4.2-1
-neofetch 6.0.0-1
-netctl 1.20-1
-network-manager-applet 1.8.21dev+3+gb4c365b1-1
-nitrogen 1.6.1-2
-nodejs 11.14.0-1
-npm 6.9.0-1
-ntfs-3g 2017.3.23-3
-openssh 8.0p1-1
-os-prober 1.76-1
-p7zip 16.02-5
-pacman 5.1.3-1
-pamac-aur 7.3.5-1
-papirus-icon-theme 20190331-1
-paprefs 1.1-1
-patch 2.7.6-7
-pavucontrol 1:4.0-1
-pciutils 3.6.2-1
-pcmanfm 1.3.1-1
-perl 5.28.2-1
-pkgconf 1.6.1-1
-procps-ng 3.3.15-1
-psmisc 23.2-1
-pulseaudio 12.2-2
-reiserfsprogs 3.6.27-2
-rhythmbox 3.4.3-1
-rxvt-unicode 9.22-7
-s-nail 14.9.13-2
-scrot 0.8.18-1
-sed 4.7-1
-shadow 4.6-2
-slack-desktop 3.3.8-3
-sudo 1.8.27-1
-sxhkd 0.6.0-1
-sysfsutils 2.1.0-10
-systemd-sysvcompat 242.0-3
-tar 1.32-1
-texinfo 6.6-1
-transmission-cli 2.94-1
-transmission-gtk 2.94-1
-ttf-dejavu 2.37-2
-usbutils 010-1
-util-linux 2.33.2-1
-vagrant 2.2.4-1
-vala-panel-git 0.4.89.r33.gabc03b7-1
-vi 1:070224-3
-vim 8.1.1186-1
-virtualbox 6.0.6-2
-visual-studio-code-bin 1.33.1-1
-vocal 2.4.0-1
-which 2.21-3
-wpa_supplicant 2:2.6-2
-xclip 0.13-2
-xdg-utils 1.1.3-3
-xdotool 3.20160805.1-2
-xf86-video-vesa 2.4.0-2
-xfce4-power-manager 1.6.1-1
-xfsprogs 4.20.0-2
-xorg-bdftopcf 1.1-1
-xorg-docs 1.7.1-2
-xorg-font-util 1.3.1-2
-xorg-fonts-100dpi 1.0.3-4
-xorg-fonts-75dpi 1.0.3-4
-xorg-iceauth 1.0.8-1
-xorg-luit 1.1.1-3
-xorg-server-devel 1.20.4-1
-xorg-server-xdmx 1.20.4-1
-xorg-server-xephyr 1.20.4-1
-xorg-server-xnest 1.20.4-1
-xorg-server-xvfb 1.20.4-1
-xorg-server-xwayland 1.20.4-1
-xorg-sessreg 1.1.1-2
-xorg-smproxy 1.0.6-2
-xorg-x11perf 1.6.1-1
-xorg-xauth 1.0.10-2
-xorg-xbacklight 1.2.2-1
-xorg-xcmsdb 1.0.5-2
-xorg-xcursorgen 1.0.7-1
-xorg-xdpyinfo 1.3.2-2
-xorg-xdriinfo 1.0.6-1
-xorg-xev 1.2.3-1
-xorg-xgamma 1.0.6-2
-xorg-xhost 1.0.8-1
-xorg-xinit 1.4.1-1
-xorg-xinput 1.6.2-2
-xorg-xkbevd 1.1.4-2
-xorg-xkbutils 1.0.4-3
-xorg-xkill 1.0.5-1
-xorg-xlsatoms 1.1.3-1
-xorg-xlsclients 1.1.4-1
-xorg-xmodmap 1.0.10-1
-xorg-xpr 1.0.5-1
-xorg-xprop 1.2.4-1
-xorg-xrandr 1.5.0-2
-xorg-xrdb 1.2.0-1
-xorg-xrefresh 1.0.6-1
-xorg-xset 1.2.4-1
-xorg-xsetroot 1.1.2-1
-xorg-xvinfo 1.1.4-1
-xorg-xwd 1.0.7-1
-xorg-xwininfo 1.1.4-1
-xorg-xwud 1.0.5-1
-xterm 344-1
-yabar-git 0.4.0.r179.ga0d3fdf-1
-yarn 1.15.2-1
-yay 9.2.0-1
+adapta-gtk-theme
+alsa-utils
+arandr
+autoconf
+automake
+bash
+binutils
+bison
+boost
+bspwm
+bzip2
+cmake
+coreutils
+cryptsetup
+dbeaver
+device-mapper
+dhcpcd
+dialog
+diffutils
+dmenu
+dunst
+dzen2
+e2fsprogs
+emacs
+evince
+fakeroot
+feh
+file
+file-roller
+filesystem
+findutils
+firefox-developer-edition
+flex
+font-manager
+gawk
+gcc
+gcc-libs
+gdb
+gettext
+git
+glibc
+google-chrome
+gotop-bin
+grep
+grub
+gvfs
+gzip
+herbstluftwm
+htop
+ibus
+ibus-unikey
+inetutils
+iproute2
+iputils
+jfsutils
+less
+licenses
+light-locker
+lightdm
+lightdm-settings
+lightdm-slick-greeter
+linux
+linux-firmware
+logrotate
+lvm2
+lxappearance-gtk3
+lxrandr-gtk3
+lxsession-gtk3
+m4
+maim
+make
+man-db
+man-pages
+mdadm
+nano
+neofetch
+netctl
+network-manager-applet
+nitrogen
+nodejs
+npm
+ntfs-3g
+openssh
+os-prober
+p7zip
+pacman
+pamac-aur
+papirus-icon-theme
+paprefs
+patch
+pavucontrol
+pciutils
+pcmanfm
+perl
+pkgconf
+polybar
+procps-ng
+psmisc
+pulseaudio
+python-pywal
+reiserfsprogs
+rhythmbox
+rxvt-unicode
+s-nail
+scrot
+sed
+shadow
+skypeforlinux-stable-bin
+slack-desktop
+sudo
+sxhkd
+sysfsutils
+systemd-sysvcompat
+tar
+texinfo
+transmission-cli
+transmission-gtk
+ttf-dejavu
+usbutils
+util-linux
+vagrant
+vala-panel-git
+vi
+vim
+virtualbox
+visual-studio-code-bin
+vlc
+vocal
+which
+wpa_supplicant
+xclip
+xdg-utils
+xdotool
+xf86-video-vesa
+xfce4-power-manager
+xfsprogs
+xorg-bdftopcf
+xorg-docs
+xorg-font-util
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-iceauth
+xorg-luit
+xorg-server-devel
+xorg-server-xdmx
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
+xorg-server-xwayland
+xorg-sessreg
+xorg-smproxy
+xorg-x11perf
+xorg-xauth
+xorg-xbacklight
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinit
+xorg-xinput
+xorg-xkbevd
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xmodmap
+xorg-xpr
+xorg-xprop
+xorg-xrandr
+xorg-xrdb
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+xterm
+yabar-git
+yarn
+yay
