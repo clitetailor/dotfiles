@@ -136,7 +136,7 @@ for i in ${!tag_names[@]} ; do
     if ! [ -z "$key" ] ; then
         hc keybind "$Mod-$key" use_index "$i"
         hc keybind "$Mod-Shift-$key" move_index "$i"
-	hc pad "$i" 22 0 0 0
+	hc pad "$i" 28 0 0 0
     fi
 done
 

@@ -78,4 +78,4 @@ panel() {
 		echo "$(panel)"
 		sleep 1
 	done
-} 2> /dev/null | lemonbar -f "Dejavu Sans Mono:size=10" -f "ShureTechMono Nerd Font:size=11" -B "#60000000" -g x22++ -p | bash
+} 2> /dev/null | lemonbar -f "Dejavu Sans Mono:size=11" -f "ShureTechMono Nerd Font:size=13" -B "#60000000" -g x28++ -p | bash
