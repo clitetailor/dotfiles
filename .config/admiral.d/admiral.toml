@@ -1,7 +1,14 @@
 [admiral]
-items = ["left", "ws",
+items = ["left", "ws", "space", "space", "title",
 	"center", "clock",
 	"right", "battery"]
+
+[space]
+path = "echo ' '"
+static = true
+
+[title]
+path = "./title.sh"
 
 [clock]
 path = "date '+ %a %b %d, %T'"

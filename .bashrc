@@ -52,6 +52,8 @@ function parse_git_dirty() {
 }
 
 alias  ls='ls --color=auto'
-export PS1="user \e[35m\u\e[39m dir \e[34m\W\e[39m \`parse_git_branch\`\n "
+export PS1="user \e[35m\u\e[39m dir \e[34m\W\e[39m \`parse_git_branch\`\n\n "
 
 alias  hc="herbstclient"
+export XDG_CONFIG_HOME="$HOME/.config"
+

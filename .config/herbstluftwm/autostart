@@ -34,7 +34,7 @@ if hc silent new_attr bool my_not_first_autostart ; then
     lxsession &
     dunst &
     compton &
-    .config/lemonbar/panel.sh &
+    $XDG_CONFIG_HOME/lemonbar/lemonbar.sh &
 #     yabar &
 fi
 
@@ -73,7 +73,7 @@ print_to_file() {
 }
 
 hc keybind Print        spawn ~/.config/herbstluftwm/screenshot_fullscreen.sh --clipboard
-hc keybind Ctrl-Print   spawn ~/.config/herbstluftwm/screenshot_selection.sh
+hc keybind Control-Print   spawn ~/.config/herbstluftwm/screenshot_selection.sh
 hc keybind Alt-Print    spawn ~/.config/herbstluftwm/screenshot_window.sh
 hc keybind $Mod-Print   spawn ~/.config/herbstluftwm/screenshot_fullscreen.sh
 
@@ -105,8 +105,10 @@ hc keybind $Mod-Shift-l     shift right
 
 # splitting frames
 # create an empty frame at the specified direction
-hc keybind $Mod-u       and .-. split bottom  0.5 .-. focus down
-hc keybind $Mod-o       and .-. split right   0.5 .-. focus right
+# hc keybind $Mod-y       and .-. split left   0.5 .-. focus left
+hc keybind $Mod-u       and .-. split bottom 0.5 .-. focus down
+# hc keybind $Mod-i       and .-. split bottom 0.5 .-. focus down
+hc keybind $Mod-o       and .-. split right  0.5 .-. focus right
 # let the current frame explode into subframes
 hc keybind $Mod-Control-space   and .-. split explode .-. cycle_all +1
 
@@ -188,6 +190,7 @@ hc keybind $Mod-i           jumpto urgent
 
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
+hc set default_frame_layout 0
 hc set frame_bg_normal_color transparent
 hc set frame_bg_active_color deepskyblue
 hc set frame_bg_urgent_color red
