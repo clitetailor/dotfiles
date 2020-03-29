@@ -1,6 +1,8 @@
-#
-# ~/.bashrc
-#
+#=================#
+#                 #
+#    ~/.bashrc    #
+#                 #
+#=================#
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -9,14 +11,13 @@ function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 	if [ ! "${BRANCH}" == "" ]
 	then
-		STAT=`parse_git_dirty`
+		STAT=$(parse_git_dirty)
 		echo -e "on \033[0;32m ${BRANCH}${STAT}\033[0;39m"
 	else
 		echo ""
 	fi
 }
 
-# get current status of git repo
 function parse_git_dirty() {
 	status=`git status 2>&1 | tee`
 	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
@@ -51,8 +52,16 @@ function parse_git_dirty() {
 	fi
 }
 
+function username() {
+	echo -n "\e[35m\u\e[39m"
+}
+
+function directory() {
+	echo -n "\e[34m\W\e[39m" 
+}
+
 alias  ls='ls --color=auto'
-export PS1="user \e[35m\u\e[39m dir \e[34m\W\e[39m \`parse_git_branch\`\n\n "
+export PS1="\n...\nuser $(username) dir $(directory) $(parse_git_branch)\n "
 
 alias  hc="herbstclient"
 export XDG_CONFIG_HOME="$HOME/.config"

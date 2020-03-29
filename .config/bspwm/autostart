@@ -1,0 +1,13 @@
+#!/bin/bash
+
+polybar ws &
+polybar title &
+polybar datetime &
+
+ibus-daemon &
+nitrogen --restore &
+light-locker &
+lxsession &
+
+dunst &
+compton &
