@@ -1,12 +1,9 @@
 #!/bin/bash
 
-polybar ws &
-polybar title &
-polybar datetime &
+polybar main &
 
 ibus-daemon &
 nitrogen --restore &
-light-locker &
 lxsession &
 
 dunst &

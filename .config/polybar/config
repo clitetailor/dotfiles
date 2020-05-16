@@ -31,8 +31,6 @@ border = #59CCF2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-offset-y = 20
-
 font-0 = JetBrainsMono Nerd Font:size=11;3
 font-2 = Dejavu Sans Mono:size=11;3
 
@@ -41,11 +39,24 @@ wm-restack = bspwm
 
 height = 28
 
-border-size = 2
 border-color = ${colors.border}
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+
+[bar/main]
+inherit = section/base
+
+modules-left = bspwm
+modules-center = xwindow
+modules-right = wlan pulseaudio battery datetime
+
+module-margin = 1
+
+padding-right = 1
+
+bottom = true
 
 
 [bar/ws]
@@ -91,7 +102,7 @@ enable-scroll = false
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = < %title% >
 label-empty = "Desktop"
 
 
@@ -105,7 +116,7 @@ ws-icon-3 = IV
 ws-icon-4 = V
 ws-icon-5 = VI
 ws-icon-6 = VII
-ws-icon-7 = VIII
+ws-icon-7 = VII
 ws-icon-8 = IX
 ws-icon-9 = X
 ws-icon-default = .

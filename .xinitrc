@@ -34,6 +34,8 @@ fi
 
 session=${1:-herbstluftwm}
 
+xsetroot -cursor_name left_ptr
+
 case $session in
 	i3|i3wm		) exec i3;;
 	bspwm		) exec bspwm;;
