@@ -102,7 +102,7 @@ enable-scroll = false
 
 [module/xwindow]
 type = internal/xwindow
-label = < %title% >
+label = < %title:0:98:...% >
 label-empty = "Desktop"
 
 
