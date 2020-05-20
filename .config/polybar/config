@@ -155,7 +155,7 @@ label-disconnected = 睊 %ifname%
 type = internal/date
 interval = 30
 
-date = "%b %d"
+date = "%a %b %d"
 time = "%I:%M %p"
 
 label = %date% %time%

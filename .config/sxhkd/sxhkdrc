@@ -9,7 +9,7 @@ super + Return
 	urxvt
 
 super + F2
-	google-chrome-stable
+	firefox-developer-edition
 
 super + s
 	dmenu_run
