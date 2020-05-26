@@ -1,0 +1,33 @@
+#!/bin/bash
+
+DIRECTORY=$(cd `dirname $0` && pwd)
+
+files=(
+    .xinitrc
+    .xsession
+    .bashrc
+
+    .Xresources
+    .Xresources.d
+
+    .config/bspwm
+    .config/sxhkd
+    .config/dunst
+    .config/polybar
+
+    .config/libinput-gestures.conf
+)
+
+
+function link_file() {
+    rm -rf ~/$1
+    ln -s "$DIRECTORY/$1" "$HOME/$1"
+}
+
+function install() {
+    for file in "${files[@]}"; do
+        link_file $file
+    done
+}
+
+install
