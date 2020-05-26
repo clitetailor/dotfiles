@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -37,10 +37,9 @@ session=${1:-herbstluftwm}
 xsetroot -cursor_name left_ptr
 
 case $session in
-	i3|i3wm		) exec i3;;
-	bspwm		) exec bspwm;;
-	herbstluftwm	) exec herbstluftwm;;
-	*		) exec $1;;
+    i3|i3wm     ) exec i3;;
+    bspwm       ) exec bspwm;;
+    *           ) exec $1;;
 esac
 
 export XDG_CONFIG_HOME="$HOME/.config"
