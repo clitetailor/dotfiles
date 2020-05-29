@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DIRECTORY=$(cd `dirname $0` && pwd)
+BACKUP_DIR="$HOME/.dotfiles.backup"
 
 files=(
     .xinitrc
@@ -21,14 +22,50 @@ files=(
 
 
 function link_file() {
-    rm -rf ~/$1
     ln -s "$DIRECTORY/$1" "$HOME/$1"
 }
 
+function unlink_file() {
+    rm -rf "$HOME/$1"
+}
+
+function backup_file() {
+    if [ -e "$HOME/$1" ]; then
+        mkdir -p $(dirname "$BACKUP_DIR/$1")
+        mv "$HOME/$1" "$BACKUP_DIR/$1"
+    fi
+}
+
+function restore_file() {
+    if [ -e "$BACKUP_DIR/$1" ]; then
+        mv "$BACKUP_DIR/$1" $(dirname "$HOME/$1")
+    fi
+}
+
 function install() {
+    mkdir -p "$BACKUP_DIR"
+
     for file in "${files[@]}"; do
+        backup_file $file
         link_file $file
     done
 }
 
-install
+function uninstall() {
+    for file in "${files[@]}"; do
+        unlink_file $file
+        restore_file $file
+    done
+
+    rm -rf "$BACKUP_DIR"
+}
+
+function main() {
+    if [ -d "$BACKUP_DIR" ]; then
+        uninstall
+    else
+        install
+    fi
+}
+
+main

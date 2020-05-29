@@ -11,8 +11,18 @@ To install packages from AUR, you may need to install [yay](https://github.com/J
 Installation
 ------------
 
+To install the packages, run the following command:
+
 ```bash
 yay -S --needed - < pkglist.txt
+```
+
+Run the installation script to install the dotfiles:
+
+```bash
+chmod +x ./<theme>/install
+
+./<theme>/install
 ```
 
 License
