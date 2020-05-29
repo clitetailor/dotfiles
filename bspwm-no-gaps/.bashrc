@@ -21,7 +21,6 @@ cyan="\e[36m"
 
 export PS1="\n user $red\u$normal dir $orange\w$normal\`__git_ps1 \"    {{ $magenta%s$normal }}\"\` \n$blue→$normal "
 
-alias  hc="herbstclient"
 export XDG_CONFIG_HOME="$HOME/.config"
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
