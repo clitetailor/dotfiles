@@ -1,0 +1,91 @@
+#!/bin/bash
+
+DEFAULT_DIRECTORY=$(pwd)
+DEFAULT_BACKUP_DIR="$HOME/.dotfiles.backup"
+
+BACKUP_DIR_EXISTS=false
+
+
+default_target_dir="$HOME"
+
+default_files=()
+
+
+function load_default_vars() {
+    DIRECTORY=${DIRECTORY:-"$DEFAULT_DIRECTORY"}
+    BACKUP_DIR=${BACKUP_DIR:-"$DEFAULT_BACKUP_DIR"}
+    
+    TARGET_DIR=${target_dir:-"$default_target_dir"}
+
+    FILES=(${files[@]:-"${default_files[@]}"})
+}
+
+
+function link_file() {
+    load_default_vars
+
+    ln -s "$DIRECTORY/$1" "$TARGET_DIR/$1"
+}
+
+function unlink_file() {
+    load_default_vars
+
+    rm -rf "$TARGET_DIR/$1"
+}
+
+
+function backup_file() {
+    load_default_vars
+
+    if [ -e "$TARGET_DIR/$1" ]; then
+        mkdir -p $(dirname "$BACKUP_DIR/$1")
+        mv "$TARGET_DIR/$1" "$BACKUP_DIR/$1"
+    fi
+}
+
+function restore_file() {
+    load_default_vars
+
+    if [ -e "$BACKUP_DIR/$1" ]; then
+        mv "$BACKUP_DIR/$1" $(dirname "$HOME/$1")
+    fi
+}
+
+
+
+function initialize() {
+    load_default_vars
+
+    if [ -d "$BACKUP_DIR" ]; then
+        BACKUP_DIR_EXISTS=true
+    fi
+
+    if [ "$BACKUP_DIR_EXISTS" = false ]; then
+        mkdir -p "$BACKUP_DIR"
+    fi
+}
+
+function run() {
+    load_default_vars
+
+    if [ "$BACKUP_DIR_EXISTS" = false ]; then
+        for FILE in "${FILES[@]}"; do
+            backup_file $FILE
+            link_file $FILE
+        done
+    else
+        for FILE in "${FILES[@]}"; do
+            unlink_file $FILE
+            restore_file $FILE
+        done
+    fi
+}
+
+function teardown() {
+    load_default_vars
+
+    if [ "$BACKUP_DIR_EXISTS" = true ]; then
+        rm -rf "$BACKUP_DIR"
+    fi
+}
+
