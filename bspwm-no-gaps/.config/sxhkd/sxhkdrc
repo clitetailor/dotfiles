@@ -49,13 +49,13 @@ XF86AudioMute
 
 # quit/restart bspwm
 ctrl + alt + delete
-	shutdown -P now
+	sudo /usr/bin/systemctl poweroff
 
 ctrl + alt + {q,w,e,r}
-	{shutdown -P now,shutdown -r now,bspc quit,wm -r}
+	{sudo /usr/bin/systemctl poweroff,sudo /usr/bin/systemctl reboot,bspc quit,wm -r}
 
 ctrl + alt + l
-	systemctl suspend
+	sudo /usr/bin/systemctl suspend
 
 # close and kill
 super + {_,shift + }w
