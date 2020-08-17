@@ -55,6 +55,14 @@ Preferred rEFInd themes:
 - [refind-theme-regular](https://github.com/bobafetthotmail/refind-theme-regular)
 - [refind-minimal](https://github.com/EvanPurkhiser/rEFInd-minimal)
 
+### Gestures
+
+To setup touchpad gestures, copy the configuration file from `./<theme>/X11/xorg.conf.d/30-touchpad.conf` to `/etc/X11/xorg.conf.d/`:
+
+```bash
+cp ./<theme>/X11/xorg.conf.d/30-touchpad.conf /etc/X11/xorg.conf.d/
+```
+
 License
 -------
 
