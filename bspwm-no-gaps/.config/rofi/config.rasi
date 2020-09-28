@@ -1,0 +1,72 @@
+configuration {
+  modi: "window,run";
+}
+
+* {
+  font: "Nimbus Sans 12";
+  background-color: #222222;
+  text-color: #ffffff;
+}
+
+window {
+  border-radius: 5px;
+}
+
+inputbar {
+  padding: 15px 15px 10px 15px;
+  border-color: #fd5c3d;
+  border-radius: 5px;
+  border: 1;
+  children: [ entry, indicator ];
+}
+
+prompt {
+  display: none;
+  font: "Nimbus Sans 14";
+  margin: 0 8px 0 0;
+}
+
+entry {
+  font: "Nimbus Sans 16";
+}
+
+indicator {
+  margin: 2px 1px 0 0;
+  orientation: horizontal;
+  expand: false;
+  children: [ num-filtered-rows, textbox-sep, num-rows ];
+}
+
+num-filtered-rows, textbox-sep, num-rows {
+  font: "Nimbus Sans 12";
+  text-color: #ddddddaa;
+  str: "/";
+}
+
+message {
+  padding: 15px 10px 15px 10px;
+}
+
+listview {
+  padding: 10px 0 10px 0;
+}
+
+scrollbar {
+  width: 4px;
+  border: 0;
+  handle-width: 8px;
+  padding: 0;
+}
+
+element {
+  padding: 6px 20px 4px 20px;
+}
+
+element selected {
+  background-color: #333333;
+}
+
+mode-switcher {
+  padding: 10px 15px 10px 15px;
+}
+

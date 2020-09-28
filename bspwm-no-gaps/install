@@ -22,6 +22,7 @@ files=(
 
     .config/bspwm
     .config/sxhkd
+    .config/rofi
     .config/dunst
     .config/polybar
 

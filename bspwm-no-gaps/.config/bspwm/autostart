@@ -4,7 +4,7 @@ polybar main &
 
 xfce-power-manager &
 
-ibus-daemon &
+ibus-daemon -d -x &
 nitrogen --restore &
 lxsession &
 
