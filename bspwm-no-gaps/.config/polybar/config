@@ -16,17 +16,28 @@
 ;
 ;==========================================================
 
+; [colors]
+; background = #ccfd5c3d
+; foreground = #111111
+; 
+; active-background = #ccfe921f
+; active-foreground = #111111
+; 
+; urgent-background = #bb870a1f
+; 
+; neutral-foreground = #451614
+; ; neutral-foreground = #fec566
+
+
 [colors]
-background = #ccfd5c3d
-foreground = #111111
+background = #cc276678
+foreground = #f6f5f5
 
-active-background = #ccfe921f
-active-foreground = #111111
+active-background = #ccd3e0ea
+active-foreground = #000000
 
-urgent-background = #bb870a1f
-
-neutral-foreground = #451614
-;neutral-foreground = #fec566
+urgent-background = #cc1687a7  
+neutral-foreground = #f6f5f5
 
 
 [section/base]
@@ -39,7 +50,8 @@ font-2 = Dejavu Sans Mono:size=11;3
 override-redirect = true
 wm-restack = bspwm
 
-height = 32
+; height = 32
+height = 36
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -47,6 +59,8 @@ cursor-scroll = ns-resize
 
 [bar/main]
 inherit = section/base
+
+dpi = ${xrdb:Xft.dpi:-1}
 
 modules-left = bspwm
 modules-center = xwindow
@@ -102,7 +116,8 @@ enable-scroll = false
 
 [module/xwindow]
 type = internal/xwindow
-label = < %title:0:98:...% >
+
+label = < %title:0:72:...% >
 label-empty = "Desktop"
 
 

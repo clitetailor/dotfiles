@@ -1,6 +1,8 @@
 #include ".Xresources.d/palenight"
 
-URxvt.font:             xft:JetBrainsMono Nerd Font:size=11
+Xft.dpi: 116
+
+URxvt.font:             xft:JetBrainsMono Nerd Font:size=10
 URxvt.internalBorder:   20
 URxvt.scrollBar:        false
 

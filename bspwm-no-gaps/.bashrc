@@ -41,3 +41,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 
+[ -f "/home/clitetailor/.ghcup/env" ] && source "/home/clitetailor/.ghcup/env" # ghcup-env

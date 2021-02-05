@@ -14,7 +14,8 @@ window {
 
 inputbar {
   padding: 15px 15px 10px 15px;
-  border-color: #fd5c3d;
+  // border-color: #fd5c3d;
+  border-color: #276678;
   border-radius: 5px;
   border: 1;
   children: [ entry, indicator ];

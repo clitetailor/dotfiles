@@ -9,7 +9,7 @@ super + Return
 	urxvt
 
 super + F2
-	firefox-developer-edition
+	vivaldi-stable
 
 super + s
 	rofi -show run

@@ -25,6 +25,7 @@ files=(
     .config/rofi
     .config/dunst
     .config/polybar
+    .config/picom
 
     .config/scripts
 
