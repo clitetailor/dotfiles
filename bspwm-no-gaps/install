@@ -26,6 +26,8 @@ files=(
     .config/dunst
     .config/polybar
     .config/picom
+    .config/kitty
+    .config/fish
 
     .config/scripts
 

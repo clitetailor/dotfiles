@@ -6,7 +6,7 @@
 
 # default applications
 super + Return
-	urxvt
+	kitty fish
 
 super + F2
 	vivaldi-stable
