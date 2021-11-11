@@ -1,5 +1,6 @@
 configuration {
   modi: "window,run";
+  terminal: "kitty";
 }
 
 * {
@@ -9,12 +10,13 @@ configuration {
 }
 
 window {
+  padding: 0;
+  border: 0;
   border-radius: 5px;
 }
 
 inputbar {
   padding: 15px 15px 10px 15px;
-  // border-color: #fd5c3d;
   border-color: #276678;
   border-radius: 5px;
   border: 1;
@@ -25,10 +27,12 @@ prompt {
   display: none;
   font: "Nimbus Sans 14";
   margin: 0 8px 0 0;
+  text-color: #ffffff;
 }
 
 entry {
   font: "Nimbus Sans 16";
+  text-color: #ffffff;
 }
 
 indicator {
@@ -60,15 +64,36 @@ scrollbar {
   width: 4px;
   border: 0;
   handle-width: 8px;
+  handle-color: #ddddddaa;
   padding: 0;
 }
 
 element {
   padding: 6px 20px 4px 20px;
+  background-color: #222222;
 }
 
-element selected {
+element.normal.normal {
+  background-color: #222222;
+  text-color: #ffffff;
+}
+
+element.alternate.normal {
+  background-color: #222222;
+  text-color: #ffffff;
+}
+
+element.selected.normal {
   background-color: #333333;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+element-icon {
+  background-color: inherit;
 }
 
 mode-switcher {
